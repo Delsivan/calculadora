@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Delsivan Vieira">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Calculadora Online</title>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+              <h1>Calculadora</h1>
+              <h2>Onl!ne</h2>
+            </div>
+          </a>
+      </div>
+    </header>
+    
+    <section class="secao-formulario">
+        <form action="">
+            <fieldset>
+                <legend id="calcular">Calculadora Onl!ne</legend>
+                <ul>
+                    <li>
+                        <label for="valor1">Primeiro valor</label>
+                        <input type="number" id="valor1">
+                    </li>
+                    <li>
+                        <label for="operacao">Escolha a operação aritmética:</label>
+                        <select id="operacao">
+                            <option selected>Escolher</option>
+                            <option value="+">Adição</option>
+                            <option value="-">Subtração</option>
+                            <option value="*">Multiplicação</option>
+                            <option value="/">Divisão</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="valor2">Segundo Valor</label>
+                        <input type="number" id="valor2">
+                    </li>
+                </ul>
+                <div class="containerBotoes">
+                    <input class="botaoCalcular" type="button" onclick="Calcular('valor1', 'valor2', 'operacao', 'saida')" value="Calcular">
+                    <input class="botaoLimpar" type="button" onclick="Limpar('valor1','valor2')" value="Limpar">
+                </div>
+                <p id="saida"></p>
+                
+            </fieldset>
+        </form>
+    </section>
+   
+
+    <footer>
+        &copy; Copyright 2022 Portfólio - Todos os direitos reservados
+
+        <section>
+            <div id="links-footer" class="links">
+                <a href="https://github.com/Delsivan" target="_blank">
+                    <div class="icons">
+                        <img src="./icons/github.png" alt="Github" title="Github">
+                    </div>
+                </a>
+                <a href="https://twitter.com/Delsivan2" target="_blank">
+                    <div class="icons">
+                        <img src="./icons/twitter.png" alt="Twitter" title="Twitter">
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/delsivan_/?hl=pt-br" target="_blank">
+                    <div class="icons">
+                        <img src="./icons/instagram.png" alt="Instagram" title="Instagram">
+                    </div>
+                </a>
+                <a href="https://www.linkedin.com/in/delsivan-nascimento-vieira-8b089784/" target="_blank">
+                    <div class="icons">
+                        <img src="./icons/linkedin.png" alt="Linkedin" title="Linkedin">
+                    </div>
+                </a>
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+<script src="scripts/calc.js"></script>
+
+</html>
