@@ -6,7 +6,7 @@ Foram utilizadas as seguintes tecnologias:
 - CSS
 - JavaScript.
 
-Link:https://delsivan.github.io/Calculadora-online/
+Link: https://delsivan.github.io/calculadora/
 
 ### :question: Dúvidas
 Em caso de dúvidas, entre em contato.
